@@ -1,0 +1,16 @@
+{
+	"name": "trademe-product",
+	"version": "0.0.1",
+	"description": "This is an Actor to Crawl for TradeMe auction current price",
+	"dependencies": {
+		"apify": "^0.20.0"
+	},
+	"devDependencies": {},
+	"main": "src/index.js",
+	"scripts": {
+		"start": "node src",
+		"test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
+	},
+	"author": "Fabio Cigliano <fabio.cigliano@gmail.com>",
+	"license": "MIT"
+}

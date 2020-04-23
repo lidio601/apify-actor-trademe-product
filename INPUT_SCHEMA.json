@@ -1,0 +1,14 @@
+{
+  "title": "Input schema for the trademe-product actor.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "message": {
+      "title": "listingId",
+      "type": "string",
+      "description": "Trademe listing id (look for the number in the url)",
+      "editor": "textfield"
+    }
+  },
+  "required": []
+}
