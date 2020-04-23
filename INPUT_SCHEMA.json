@@ -3,8 +3,8 @@
   "type": "object",
   "schemaVersion": 1,
   "properties": {
-    "message": {
-      "title": "listingId",
+    "listingId": {
+      "title": "Trademe Listing id",
       "type": "string",
       "description": "Trademe listing id (look for the number in the url)",
       "editor": "textfield"
