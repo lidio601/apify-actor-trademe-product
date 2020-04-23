@@ -1,4 +1,4 @@
-# Trademe Auction price actor
+# Trademe auction price
 
 The `README.md` file contains a documentation what your actor does and how to use it,
 which is then displayed in the app or Apify Store. It's always a good
