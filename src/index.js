@@ -22,7 +22,9 @@ Apify.main(async () => {
   log.setLevel(log.LEVELS.DEBUG);
   log.info("task input", input);
 
-  const url = `https://www.trademe.co.nz/${input.listingId}`;
+  const { listingId } = input;
+
+  const url = `https://www.trademe.co.nz/${listingId}`;
 
   // Open a request queue and add a start URL to it
   const requestQueue = await Apify.openRequestQueue();
@@ -89,5 +91,7 @@ Apify.main(async () => {
   log.info("crawled data", { count: data.length });
   log.debug("crawled data", data);
 
-  await Apify.pushData({ items: data, count: data.length });
+  const dataset = await Apify.openDataset(`trademe-${listingId}`);
+
+  await dataset.pushData(data);
 });
