@@ -16,6 +16,7 @@ Apify.main(async () => {
   // For more information, see https://apify.com/docs/actor/input-schema
   log.debug("reading INPUT.");
   const input = await Apify.getInput();
+  console.dir(input);
   if (!input) throw new Error("INPUT cannot be empty!");
   if (!input.listingId) throw new Error("listingId cannot be empty!");
   log.setLevel(log.LEVELS.DEBUG);
